@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>添加边缘节点 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/01-edge-nodes/02-node-management/01-add-edge-nodes/</link>
+    <description>Recent content in 添加边缘节点 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/01-edge-nodes/02-node-management/01-add-edge-nodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 KubeEdge 添加边缘节点</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/02-node-management/01-add-edge-nodes/01-add-edge-node-using-kubeedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/02-node-management/01-add-edge-nodes/01-add-edge-node-using-kubeedge/</guid>
+      <description> 本节介绍如何使用 KubeEdge 边缘运行时添加边缘节点。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+准备工作 在边缘节点上安装 Docker。
+添加边缘节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点管理。
+在页面右侧点击添加。
+在添加边缘节点对话框，设置边缘节点的参数。
+参数 描述 容器运行时
+选择当前集群的容器运行时：Docker 或 Containerd
+镜像仓库地址
+请输入 docker.io/edgewize 或 registry.cn-shanghai.aliyuncs.com/edgewize。
+名称
+边缘节点的名称。系统会自动为边缘节点生成名称，您也可以手动设置边缘节点的名称。
+添加默认污点
+是否为边缘节点添加污点以阻止容器组调度到边缘节点上。
+点击验证生成边缘节点配置命令。
+登录边缘节点并执行上一步生成的命令。
+刷新 KubeSphere 企业版 Web 控制台的边缘节点页面。如果添加成功，边缘节点将显示在边缘节点列表。
+重置边缘节点 重置节点将清除边缘节点上因执行节点配置命令而创建的资源。
+systemctl stop edgecore rm -rf /etc/kubeedge/ rm /usr/local/bin/edgecore rm -rf /var/lib/kubeedge /var/lib/edged /etc/kubeedge/ca /etc/kubeedge/certs docker stop mqtt docker rm mqtt systemctl daemon-reload </description>
+    </item>
+    
+    <item>
+      <title>使用 OpenYurt 添加边缘节点</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/02-node-management/01-add-edge-nodes/02-add-edge-node-using-openyurt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/02-node-management/01-add-edge-nodes/02-add-edge-node-using-openyurt/</guid>
+      <description>本节介绍如何使用 OpenYurt 边缘运行时添加边缘节点。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+准备工作 执行节点配置命令前，需要在边缘节点上安装必要的系统软件包。
+安装依赖项。若边缘节点使用的是 Ubuntu 操作系统，执行以下命令为边缘节点安装依赖项：
+sudo apt-get update sudo apt install wireguard wireguard-tools socat conntrack -y 若边缘节点使用其他操作系统，请将 apt 替换为操作系统对应的软件包管理工具。
+安装 docker 20.10
+curl -fsSL https://get.docker.com -o install-docker.sh &amp;amp;&amp;amp; sh install-docker.sh --version 20.10 修改 cgroupdriver
+cat &amp;gt; /etc/docker/daemon.json &amp;lt;&amp;lt;EOF { &amp;#34;exec-opts&amp;#34;: [&amp;#34;native.cgroupdriver=systemd&amp;#34;] } EOF 重启 docker
+service docker restart 启用 IP 转发。
+cat &amp;lt;&amp;lt;EOF | sudo tee /etc/sysctl.d/k8s.conf net.ipv4.ip_forward = 1 EOF sysctl --system 添加边缘节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。</description>
+    </item>
+    
+  </channel>
+</rss>

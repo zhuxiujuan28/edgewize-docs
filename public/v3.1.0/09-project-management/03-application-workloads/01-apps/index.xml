@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>应用 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/09-project-management/03-application-workloads/01-apps/</link>
+    <description>Recent content in 应用 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/09-project-management/03-application-workloads/01-apps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从应用模板安装应用</title>
+      <link>/v3.1.0/09-project-management/03-application-workloads/01-apps/02-install-an-app-using-an-app-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/03-application-workloads/01-apps/02-install-an-app-using-an-app-template/</guid>
+      <description>本节介绍如何使用边缘企业空间的应用模板在项目中批量部署应用。
+说明 企业空间中的应用模板由具有相关权限的企业空间成员创建。有关应用功能参数的更多信息，请联系相关企业空间成员。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有应用实例创建权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+被部署应用的边缘集群，其节点组需已添加节点，并已绑定将被部署应用的项目。有关更多信息，请参阅在节点组中添加节点、绑定项目到节点组。
+被部署应用的项目已经分配给一个边缘企业空间。
+您在该项目中具有应用实例创建权限。有关更多信息，请参阅“项目成员”和“项目角色”。
+操作步骤 以具有应用实例创建权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择应用负载 &amp;gt; 批量应用部署。
+在页面点击创建。
+在应用模板列表中点击一个应用模板的名称打开其详情页面。
+在容器组信息页面，点击版本下的，选择所需的应用版本，按需编辑容器组设置，然后点击部署。
+在基本信息页签，设置应用的基本信息，并选择部署应用的边缘节点，点击确认，然后点击下一步。
+在存储设置页签，为应用管理的容器挂载卷，然后点击下一步。
+在高级设置页签，设置应用的元数据，然后点击安装。
+应用安装完成后，即可在目标项目中查看已安装的应用。
+参数描述 以下介绍如何设置应用的参数。
+基本信息
+设置应用的基本信息。
+参数 描述 名称
+用户自定义的应用名称。名称只能包含小写字母、数字和连字符（-），必须以小写字母开头并以小写字母或数字结尾，最长 32 个字符。
+描述
+应用的描述信息。描述可包含任意字符，最长 256 个字符。
+边缘节点
+将容器组副本调度到指定的边缘节点。
+点击添加边缘节点，依次选择与项目绑定的节点组、边缘节点。
+存储设置
+为容器挂载卷、配置字典或保密字典。
+参数 描述 挂载卷
+为容器挂载持久卷、临时卷或 HostPath 卷。
+挂载配置字典或保密字典
+将配置字典或保密字典中的数据作为卷挂载到容器。
+将光标悬停在已添加的卷上，然后在右侧点击可编辑卷的设置。
+将光标悬停在已挂载的卷上，然后在右侧点击可删除卷。
+存储设置 &amp;gt; 挂载卷 &amp;gt; 持久卷
+为容器挂载持久卷。用于创建持久卷的持久卷声明必须属于容器所在的项目。
+参数 描述 选择持久卷声明
+选择用于创建持久卷的持久卷声明。该持久卷声明必须属于容器所在项目。如果容器所在的项目中没有可用的持久卷声明，您需要提前创建一个持久卷声明。
+挂载方式
+卷在容器上的挂载方式。
+读写：允许容器读取卷中的数据并向其中写入数据。
+只读：只允许容器读取卷中的数据。
+不挂载：卷不挂载到容器上。
+挂载路径</description>
+    </item>
+    
+    <item>
+      <title>查看应用列表</title>
+      <link>/v3.1.0/09-project-management/03-application-workloads/01-apps/04-view-an-app-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/03-application-workloads/01-apps/04-view-an-app-list/</guid>
+      <description>本节介绍如何查看应用列表。
+前提条件 您需要加入一个边缘项目并在项目中具有应用实例查看权限。有关更多信息，请参阅“项目成员”和“项目角色”。
+操作步骤 以具有应用实例查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择应用负载 &amp;gt; 批量应用部署。
+应用列表提供以下信息：
+参数 描述 名称
+应用的名称。
+执行状态
+应用的部署状态。
+成功：应用部署成功。
+执行中：正在部署应用。
+失败：应用部署失败。
+更新时间
+应用的更新时间。
+在列表上方点击搜索框并输入关键字，可按名称搜索应用。
+在列表右上角点击可刷新列表信息。
+在列表右上角点击可定制列表中显示的信息。</description>
+    </item>
+    
+    <item>
+      <title>查看应用详情</title>
+      <link>/v3.1.0/09-project-management/03-application-workloads/01-apps/05-view-template-based-app-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/03-application-workloads/01-apps/05-view-template-based-app-details/</guid>
+      <description>本节介绍如何查看已部署应用的详情。
+前提条件 您需要加入一个边缘项目并在项目中具有应用实例查看权限。有关更多信息，请参阅“项目成员”和“项目角色”。
+操作步骤 以具有应用实例查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择应用负载 &amp;gt; 批量应用部署。
+在应用页面，点击一个应用的名称打开其详情页面。
+在应用详情页面左侧的属性区域查看应用的资源属性。
+参数 描述 集群
+应用所属的边缘集群。
+项目
+应用所属的项目。
+创建时间
+应用的创建时间。
+更新时间
+应用的更新时间。
+创建者
+创建应用的用户。
+在应用详情页面左侧的资源状态页签查看组成应用的工作负载。
+工作负载区域提供以下信息：
+参数 描述 名称
+工作负载的名称。
+类型
+工作负载的类型。
+状态
+工作负载当前的状态。
+运行中：工作负载运行正常。
+更新中：工作负载正在更新容器组副本。
+已停止：工作负载的期望容器组副本数和当前容器组副本数都为 0。
+节点组
+工作负载所属的节点组。
+边缘节点
+工作负载所在的边缘节点。</description>
+    </item>
+    
+    <item>
+      <title>编辑应用信息</title>
+      <link>/v3.1.0/09-project-management/03-application-workloads/01-apps/06-edit-app-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/03-application-workloads/01-apps/06-edit-app-information/</guid>
+      <description>本节介绍如何编辑应用信息。
+您可以编辑应用的别名和描述。不支持编辑已创建应用的名称。
+前提条件 您需要加入一个边缘项目并在项目中具有应用实例管理权限。有关更多信息，请参阅“项目成员”和“项目角色”。
+操作步骤 以具有应用实例管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择应用负载 &amp;gt; 批量应用部署。
+在需要操作的应用右侧点击，然后在下拉列表中选择编辑信息。
+在编辑信息对话框，设置应用的描述，然后点击确定。
+参数 描述 描述
+应用的描述信息。描述可包含任意字符，最多包含 256 个字符。</description>
+    </item>
+    
+    <item>
+      <title>删除应用</title>
+      <link>/v3.1.0/09-project-management/03-application-workloads/01-apps/10-delete-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/03-application-workloads/01-apps/10-delete-apps/</guid>
+      <description>本节介绍如何删除应用。
+前提条件 您需要加入一个边缘项目并在项目中具有应用实例删除权限。有关更多信息，请参阅“项目成员”和“项目角色”。
+删除单个应用 以具有应用实例删除权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择应用负载 &amp;gt; 批量应用部署。
+在需要删除的应用右侧点击，然后在下拉列表中选择删除。
+在删除应用对话框，输入应用的名称，然后点击确定。
+批量删除应用 以具有应用实例删除权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择应用负载 &amp;gt; 批量应用部署。
+选择需要删除的应用左侧的复选框，然后在应用列表上方点击删除。
+在批量删除应用对话框，输入应用的名称，然后点击确定。
+说明 请使用半角逗号（,）和空格分隔多个名称。</description>
+    </item>
+    
+  </channel>
+</rss>

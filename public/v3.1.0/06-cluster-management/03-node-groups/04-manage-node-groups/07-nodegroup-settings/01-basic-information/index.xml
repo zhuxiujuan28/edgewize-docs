@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基本信息 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/</link>
+    <description>Recent content in 基本信息 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>查看节点组基本信息</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/01-view-basic-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/01-view-basic-information/</guid>
+      <description>本节介绍如何查看节点组基本信息。
+前提条件 您需要在节点组中具有节点组查看权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+操作步骤 以具有节点组查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择节点组设置 &amp;gt; 基本信息。
+基本信息页面提供以下信息：节点组的名称、镜像同步状态、创建者、创建时间、与节点组绑定的边缘节点数量和项目数量。</description>
+    </item>
+    
+    <item>
+      <title>编辑节点组信息</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/02-edit-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/02-edit-information/</guid>
+      <description>本节介绍如何编辑节点组基本信息。
+您可以编辑节点组的别名和描述。不支持编辑已创建节点组的名称。
+前提条件 您需要在节点组中具有节点组管理权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+操作步骤 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择节点组设置 &amp;gt; 基本信息。
+在基本信息页面，点击管理，然后在下拉列表中选择编辑信息。
+在编辑信息对话框，设置节点组的别名和描述，然后点击确定。</description>
+    </item>
+    
+    <item>
+      <title>删除节点组</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/05-delete-a-nodegroup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/01-basic-information/05-delete-a-nodegroup/</guid>
+      <description>本节介绍如何删除节点组。
+注意 删除节点组时，请确保节点组下没有边缘节点。若有，请先将边缘节点从该节点组中移除。
+删除节点组后，下一级的节点组会向上移一级，比如，删除二级节点组，之前的三级节点组会自动变为二级节点组。
+前提条件 您需要在节点组中具有节点组管理权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+操作步骤 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择节点组设置 &amp;gt; 基本信息。
+在基本信息页面，点击管理，然后在下拉列表中选择删除节点组。
+在删除节点组对话框，输入节点组的名称，然后点击确定。</description>
+    </item>
+    
+  </channel>
+</rss>

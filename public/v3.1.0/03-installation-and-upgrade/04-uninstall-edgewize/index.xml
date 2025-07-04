@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>卸载 EdgeWize on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/03-installation-and-upgrade/04-uninstall-edgewize/</link>
+    <description>Recent content in 卸载 EdgeWize on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/03-installation-and-upgrade/04-uninstall-edgewize/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卸载 EdgeWize</title>
+      <link>/v3.1.0/03-installation-and-upgrade/04-uninstall-edgewize/01-uninstall-kubesphere-and-edgewize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/03-installation-and-upgrade/04-uninstall-edgewize/01-uninstall-kubesphere-and-edgewize/</guid>
+      <description>本节仅介绍如何卸载 EdgeWize 扩展组件。若要卸载 KubeSphere 企业版，请参阅 KubeSphere 企业版安装指南。
+警告 此操作不能撤销，请谨慎执行此操作。
+前提条件 为避免数据丢失，请提前备份所有重要数据。
+您需要在 KubeSphere 企业版平台具有 platform-admin 角色。
+操作步骤 以具有 platform-admin 角色的用户登录 KubeSphere 企业版 Web 控制台。
+点击扩展中心，进入扩展中心页面。
+点击 EdgeWize，进入组件详情页。
+点击组件图标下的，选择卸载。
+输入扩展组件的名称，点击确定开始卸载。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>节点组管理 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/</link>
+    <description>Recent content in 节点组管理 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>进入节点组管理页面</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/01-access-a-node-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/01-access-a-node-group/</guid>
+      <description>本节介绍如何进入节点组的资源管理页面。
+前提条件 您需要在节点组中具有节点组管理权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+方法 1 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择节点组 &amp;gt; 节点组目录。
+点击左侧的节点组，右侧将显示该节点组的概览信息。
+点击页面右侧的管理节点组，进入节点组的资源管理页面。
+方法 2 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择节点组 &amp;gt; 节点组列表。
+点击节点组的名称，进入节点组的资源管理页面。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>项目 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/05-projects/</link>
+    <description>Recent content in 项目 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/05-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绑定项目到节点组</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/05-projects/01-bind-to-a-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/05-projects/01-bind-to-a-project/</guid>
+      <description>本节介绍如何将边缘项目绑定到节点组。
+前提条件 您需要在节点组中具有节点组管理权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+已在边缘企业空间中创建一个项目。
+操作步骤 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择项目。
+点击绑定。
+在绑定项目对话框中，勾选要绑定的项目，然后点击确定。
+在列表上方点击搜索框并输入关键字，可按名称搜索项目。
+在列表右上角点击可刷新列表信息。</description>
+    </item>
+    
+    <item>
+      <title>解绑项目</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/05-projects/03-unbind-a-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/05-projects/03-unbind-a-project/</guid>
+      <description>本节介绍如何解除项目与节点组的绑定关系。
+前提条件 您需要在节点组中具有节点组管理权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+解绑单个项目 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择项目。
+在需要删除的项目右侧点击。
+在删除项目对话框，输入项目的名称，然后点击确定。
+批量解绑项目 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择项目。
+选择需要删除的项目左侧的复选框，然后在项目列表上方点击删除。
+在删除项目对话框，输入项目的名称，然后点击确定。
+说明 请使用半角逗号（,）和空格分隔多个名称。</description>
+    </item>
+    
+  </channel>
+</rss>

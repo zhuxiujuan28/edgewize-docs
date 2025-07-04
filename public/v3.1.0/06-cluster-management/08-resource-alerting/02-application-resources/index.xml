@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>资源用量 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/08-resource-alerting/02-application-resources/</link>
+    <description>Recent content in 资源用量 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/08-resource-alerting/02-application-resources/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>查看资源用量排行</title>
+      <link>/v3.1.0/06-cluster-management/08-resource-alerting/02-application-resources/02-view-ranked-by-resource-usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/08-resource-alerting/02-application-resources/02-view-ranked-by-resource-usage/</guid>
+      <description>本节介绍如何查看节点和项目的资源用量排行。
+前提条件 您需要加入一个边缘集群并在集群中具有监控查看权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+查看用量排行 以具有监控查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘资源告警 &amp;gt; 资源用量。
+在资源用量页面，点击节点用量排行和项目用量排行页签查看各节点和项目的资源使用情况。
+在列表左上角点击下拉列表可选择按照 CPU 用量、内存用量、容器组数量、出站流量或入站流量对节点和项目进行排序。
+在列表右上角点击导出可下载 JSON 格式的资源用量数据。</description>
+    </item>
+    
+  </channel>
+</rss>

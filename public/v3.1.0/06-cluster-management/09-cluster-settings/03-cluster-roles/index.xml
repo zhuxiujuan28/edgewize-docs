@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>集群角色 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/09-cluster-settings/03-cluster-roles/</link>
+    <description>Recent content in 集群角色 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/09-cluster-settings/03-cluster-roles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>查看集群角色列表</title>
+      <link>/v3.1.0/06-cluster-management/09-cluster-settings/03-cluster-roles/01-view-a-cluster-role-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/09-cluster-settings/03-cluster-roles/01-view-a-cluster-role-list/</guid>
+      <description>本节介绍如何查看集群角色列表。
+前提条件 您需要加入一个边缘集群并在集群中具有角色查看权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+操作步骤 以具有角色查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘集群设置 &amp;gt; 边缘集群角色。
+KubeSphere 企业版平台提供以下预置集群角色：
+角色 描述 cluster-admin
+集群管理员，在集群内具有除创建和删除集群以外的所有权限。
+cluster-viewer
+集群观察员，在集群内具有所有资源的查看权限。
+cluster-self-provisioner
+创建节点组并成为所创建节点组的管理员。
+cluster-regular
+被邀请加入节点组之前无法访问任何资源。</description>
+    </item>
+    
+    <item>
+      <title>查看集群角色详情</title>
+      <link>/v3.1.0/06-cluster-management/09-cluster-settings/03-cluster-roles/02-view-cluster-role-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/09-cluster-settings/03-cluster-roles/02-view-cluster-role-details/</guid>
+      <description>本节介绍如何查看集群角色详情。
+前提条件 您需要加入一个边缘集群并在集群中具有角色查看权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+操作步骤 以具有角色查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘集群设置 &amp;gt; 边缘集群角色。
+在集群角色列表中点击一个集群角色的名称打开其详情页面。
+在集群角色详情页面右侧的权限页签查看集群角色具有的权限。
+所有集群成员都可以查看集群的基本信息。其他操作所需的权限如下：
+边缘集群管理
+权限 允许操作 节点组查看
+查看节点组列表、查看节点组中的节点、 查看集群基本信息。
+节点组管理
+创建节点组目录、移动节点组、在节点组中添加节点、绑定/解绑项目、管理节点组角色/成员。
+告警
+权限 允许操作 规则组查看
+查看规则组列表、查看规则组详情。
+告警查看
+查看告警列表。
+规则组管理
+创建规则组、编辑告警规则、启用禁用规则组、删除规则组。
+监控
+权限 允许操作 监控查看
+查看节点和项目的资源用量排行。
+监控管理
+管理集群的监控。
+集群设置
+权限 允许操作 集群设置查看
+查看集群基本信息。
+集群设置管理
+编辑集群基本信息。
+集群资源
+权限 允许操作 节点查看
+查看节点列表、查看节点详情。
+节点管理
+添加节点、阻止和允许容器组调度到节点、访问节点终端、编辑节点污点、编辑节点标签、分配到节点组、脱离节点组。
+项目
+权限 允许操作 项目查看
+查看项目列表、查看项目详情。
+项目管理
+创建项目、编辑项目信息、编辑项目注解、编辑项目配额、编辑默认容器配额、删除项目。
+应用负载
+参数 允许操作 应用负载查看
+工作负载查看：查看工作负载列表、查看工作负载详情。
+任务查看：查看任务列表、查看任务详情。
+容器组查看：查看容器组列表、查看容器组详情。
+服务查看：查看服务列表、查看服务详情。
+应用负载管理</description>
+    </item>
+    
+  </channel>
+</rss>

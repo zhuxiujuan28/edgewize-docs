@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>部署 EdgeWize on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/03-installation-and-upgrade/02-deploy-edgewize/</link>
+    <description>Recent content in 部署 EdgeWize on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/03-installation-and-upgrade/02-deploy-edgewize/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装依赖扩展组件</title>
+      <link>/v3.1.0/03-installation-and-upgrade/02-deploy-edgewize/03-install-extensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/03-installation-and-upgrade/02-deploy-edgewize/03-install-extensions/</guid>
+      <description>本节介绍如何安装 EdgeWize 依赖的扩展组件。登录 KubeSphere 企业版 Web 控制台，在扩展中心安装并配置以下依赖的扩展组件。
+EdgeWize 的监控数据依赖可观测模块进行存储和查询展示，因此需要确保可观测模块启用且配置正确。WizTelemetry 可观测平台的各个组件安装并配置完成后，可实现以下功能：
+边缘监控页面展示
+边缘节点容器日志查询
+边缘集群 ksAPIserver 审计
+边缘集群告警规则配置和触发
+前提条件 您需要在 KubeSphere 企业版平台具有 platform-admin 角色。
+1. 安装 WizTelemetry 平台服务 WizTelemetry 平台服务负责在 host 集群中统一处理多集群监控查询。
+由于 EdgeWize 需要启用 WizTelemetry 全局监控 扩展组件，因此需修改 WizTelemetry 平台服务的扩展组件配置，将 whizard-telemetry.config.observability.enabled 设置为 true。
+whizard-telemetry: config: observability: enabled: true endpoint: &amp;#34;http://query-frontend-whizard-operated.kubesphere-monitoring-system.svc:10902&amp;#34; 2. 安装 OpenSearch 分布式检索与分析引擎 OpenSearch 用于存储多集群日志和审计日志。
+安装时，在集群选择页面勾选 host 集群，将 OpenSearch 部署到 host 集群即可。
+3. 安装 WizTelemetry 数据流水线 由于 EdgeWize 需要作为 member 集群向 OpenSearch 写入数据，因此需要在安装 WizTelemetry 数据流水线时，配置 sinks。</description>
+    </item>
+    
+    <item>
+      <title>安装 EdgeWize</title>
+      <link>/v3.1.0/03-installation-and-upgrade/02-deploy-edgewize/05-install-edgewize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/03-installation-and-upgrade/02-deploy-edgewize/05-install-edgewize/</guid>
+      <description>本节介绍如何安装边缘计算扩展组件 - EdgeWize。
+准备工作 下载 ewctl 命令行工具，用于辅助 EdgeWize 的安装和管理。
+根据您的系统架构下载对应版本： amd64 arm64
+步骤 1：纳管集群 kubeconfig 并导入根证书 为了给 EdgeWize 网关和边缘集群 CloudCore 颁发服务器证书，EdgeWize 需要获取根证书和对应的私钥。
+警告 安装 EdgeWize 之前，必须先完成 EdgeWize 根证书的导入工作，否则无法正常使用 EdgeWize。
+使用 ewctl 工具生成的证书需要备份，并妥善保存。
+解压 EdgeWize 安装包中的 ewctl 命令行工具到指定目录。
+tar -zxvf &amp;lt;ewctl package name&amp;gt; -C /usr/local/bin/ （可选）若想避免在使用 ewctl 时对集群默认的 kubeconfig 文件进行修改，可创建 EdgeWize 专用的 kubeconfig 文件。如，在任意路径下创建空的 kubeconfig 文件。
+touch /root/edgewize-config （可选）为方便后续操作，可以设置 KUBECONFIG 环境变量。假设当前 ewctl 使用的 kubeconfig 文件路径为 /root/edgewize-config:
+export KUBECONFIG=&amp;#34;/root/edgewize-config&amp;#34; 将底层 meta 集群的 kubeconfig 配置（默认位置假设为 /root/.</description>
+    </item>
+    
+  </channel>
+</rss>

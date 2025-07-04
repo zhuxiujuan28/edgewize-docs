@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>概览 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/09-project-management/02-overview/</link>
+    <description>Recent content in 概览 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/09-project-management/02-overview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>查看项目概览信息</title>
+      <link>/v3.1.0/09-project-management/02-overview/01-view-project-overall-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/02-overview/01-view-project-overall-information/</guid>
+      <description>本节介绍如何查看项目概览信息。
+前提条件 您需要加入一个边缘项目并在项目中具有项目设置管理权限。有关更多信息，请参阅“项目成员”和“项目角色”。
+操作步骤 以具有项目设置管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择概览。
+概览页面提供以下信息：
+参数 描述 基本信息
+项目的名称、描述、所属集群、企业空间和创建者。
+项目成员和角色
+项目成员和角色数量，以及最近登录的用户。
+资源用量排行
+项目中特定资源用量最高的 5 个工作负载。点击下拉列表可选择按 CPU、内存、出站流量或入站流量排序。点击展开或查看更多查看更多排行信息。
+已创建资源数量
+显示当前项目的资源数量，如容器组、部署、任务、定时任务的数量。
+资源用量
+显示当前项目的 CPU、内存的总量和实时用量。
+项目配额
+项目中所有容器的资源预留总和的最大值，以及项目中所有容器的资源上限总和的最大值。
+项目告警
+显示项目的告警规则组产生的告警数量。
+告警状态的类型包括：
+验证中：监控指标满足预设的条件，但未满足预设的持续时间。
+已触发：监控指标满足预设的条件，并且满足预设的持续时间。
+容器组
+显示当前项目的各种类型容器组的数量。
+容器组状态类型包括：
+等待中：容组器已被系统接受，但有至少一个容器尚未创建也未运行。此状态下，容器组可能正在等待调度，或等待容器镜像下载完成。
+运行中：容器组已分配给某个节点，容器组中的所有容器都已被创建，至少有一个容器正在运行、启动或重启。
+成功完成：容器组中的所有容器都已成功终止（以 0 退出码终止），并且不再重启。
+失败：容器组中的所有容器都已终止，并且至少有一个容器以非 0 退出码终止。
+未知：系统无法获取容器组状态。出现这种状态通常是由于系统与容器组所在的主机通信失败。
+容器组 QoS（服务质量）类型包括：
+Guaranteed：容器组中的每个容器都具有内存上限、内存请求、CPU 上限、CPU 请求，并且内存上限等于内存请求，CPU 上限等于 CPU 请求。
+Burstable：容器组中至少有一个容器不满足 Guaranteed 类型的要求。
+BestEffort：容器组中的容器没有配置任何内存上限、内存请求、CPU 上限或CPU 请求。
+容器组的 QoS 类型将决定容器组运行的优先级。当系统中资源不足以运行所有容器组时，系统优先保证运行 QoS 类型为 Guaranteed 的容器组，其次保证运行 QoS 类型为 Burstable 的容器组，最后保证运行 QoS 类型为 BestEffort 的容器组。</description>
+    </item>
+    
+  </channel>
+</rss>

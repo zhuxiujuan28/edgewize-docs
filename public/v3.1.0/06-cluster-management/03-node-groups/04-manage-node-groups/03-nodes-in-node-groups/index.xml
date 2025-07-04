@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>节点管理 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/03-nodes-in-node-groups/</link>
+    <description>Recent content in 节点管理 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/03-nodes-in-node-groups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在节点组中添加节点</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/03-nodes-in-node-groups/01-add-nodes-to-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/03-nodes-in-node-groups/01-add-nodes-to-groups/</guid>
+      <description>本节介绍如何在节点组中直接添加边缘节点。
+前提条件 您需要在节点组中具有节点组管理权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+操作步骤 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择节点管理。
+点击添加节点。请参阅添加边缘节点完成边缘节点的准备工作和后续添加操作。
+在此页面添加的边缘节点，自动属于该节点组。</description>
+    </item>
+    
+    <item>
+      <title>查看节点组中的节点</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/03-nodes-in-node-groups/03-view-nodes-in-node-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/03-nodes-in-node-groups/03-view-nodes-in-node-groups/</guid>
+      <description>本节介绍如何查看节点组中的边缘节点。
+前提条件 您需要在节点组中具有节点组查看权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+操作步骤 以具有节点组查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择节点管理。
+节点列表提供以下信息：
+参数 描述 名称
+节点的主机名称和在子网内部的 IP 地址。
+状态
+各节点的运行状态。
+运行中：节点运行正常。
+无法调度：节点被用户手动设置为不可调度。如果节点处在此状态，容器组将不能被调度到该节点。
+告警：节点上存在告警。您可以在节点详情页面的运行状态 &amp;gt; 健康状态区域查看节点的告警类型。
+如果节点上存在污点，状态列还将显示节点上污点的数量。将光标悬停在污点数字上查看污点的具体信息。
+CPU
+各节点的 CPU 核总数、已使用 CPU 核数量和已使用 CPU 核百分比。已使用 CPU 核数量包含底层系统使用的 CPU 核数量。
+内存
+各节点的内存总大小、已使用内存大小和已使用内存的百分比。已使用内存大小包含底层系统使用的内存大小。
+容器组
+各节点上可创建容器组的总数、已创建容器组的数量和已创建容器组的百分比。
+已分配 CPU/已分配内存
+各节点预留给容器组的 CPU 和内存资源，以及预留资源相对可分配资源的百分比。将光标悬停到数据单元格中可以查看各节点的容器组资源上限，以及资源上限相对可分配资源的百分比。
+在列表上方点击搜索框并设置搜索条件，可按名称、状态或角色搜索节点。
+在列表右上角点击可刷新列表信息。
+在列表右上角点击可定制列表中显示的信息。
+点击节点名称，可进入节点的详情页面。有关更多信息，请参阅查看节点详情。</description>
+    </item>
+    
+  </channel>
+</rss>

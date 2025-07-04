@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>边缘应用模板 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/08-workspace-management/05-app-templates/</link>
+    <description>Recent content in 边缘应用模板 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/08-workspace-management/05-app-templates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建应用模板</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/01-create-an-app-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/01-create-an-app-template/</guid>
+      <description>本节介绍如何创建应用模板。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有边缘应用模板管理权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+操作步骤 以具有边缘应用模板管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+在页面点击创建。
+在基本信息页签，设置应用模板的基本信息，然后点击下一步。
+在容器组设置页签，为应用模板管理的容器组设置副本数量、容器、更新策略、安全上下文、调度规则和元数据，然后点击下一步。
+在网络设置页签，选择网络类型，并按需配置端口映射规则，然后点击创建。
+应用模板创建完成后将显示在应用模板列表中。
+参数描述 以下介绍如何设置应用模板的参数。
+基本信息
+设置应用模板的基本信息。
+参数 描述 名称
+应用模板的名称。名称只能包含小写字母、数字和连字符（-），必须以小写字母或数字开头和结尾，最长 253 个字符。
+别名
+应用模板的别名。不同应用模板的别名可以相同。别名只能包含中文、字母、数字和连字符（-），不得以连字符（-）开头或结尾，最长 63 个字符。
+应用版本
+将要创建的应用版本，如 1.0.0。应用版本需要符合 Semantic Versioning 规范。
+描述
+应用模板的描述信息。描述可包含任意字符，最长 256 个字符。
+容器组设置 &amp;gt; 容器组副本数量
+点击/增加/减少容器组副本的数量，最小值为 1。
+容器组设置 &amp;gt; 添加容器
+创建容器组中运行的容器。您可以在容器组中创建多个容器。
+点击添加容器可创建容器。
+将光标悬停在已创建的容器上，然后在右侧点击可编辑容器的设置。
+将光标悬停在已创建的容器上，然后在右侧点击可删除容器。
+容器组设置 &amp;gt; 添加容器 &amp;gt; 容器设置
+设置容器的镜像、名称、类型和资源。
+参数 描述 镜像
+创建容器所需的镜像。
+输入镜像的名称（例如 nginx:latest）或路径（例如 docker.io/nginx:latest），然后按 Enter 键可搜索镜像。
+如果您只输入镜像的名称，默认情况下将从 Docker Hub 拉取镜像。如需使用私有镜像服务，您需要创建包含私有镜像服务信息的保密字典，然后在镜像文本框左侧选择私有镜像服务。</description>
+    </item>
+    
+    <item>
+      <title>查看应用模板列表</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/02-view-an-app-template-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/02-view-an-app-template-list/</guid>
+      <description>本节介绍如何查看应用模板列表。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有边缘应用模板查看权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+操作步骤 以具有边缘应用模板查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+应用模板列表提供以下信息：
+参数 描述 名称
+应用模板的名称、图标和描述信息。
+最新版本
+应用模板中的最新版本。每个应用模板可包含应用的多个版本。
+容器数量
+最新版本的应用模板中的容器的数量。
+更新时间
+应用模板的更新时间。
+在列表上方点击搜索框并输入关键字，可按名称搜索应用模板。
+在列表右上角点击可刷新列表信息。
+在列表右上角点击可定制列表中显示的信息。</description>
+    </item>
+    
+    <item>
+      <title>查看应用模板详情</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/03-view-app-template-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/03-view-app-template-details/</guid>
+      <description>本节介绍如何查看应用模板详情。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有边缘应用模板查看权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+操作步骤 以具有边缘应用模板查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+在应用模板列表中点击一个应用模板的名称打开其详情页面。
+在应用模板详情页面左侧的属性区域，查看应用模板的资源属性。
+参数 描述 企业空间
+应用模板所属的企业空间。
+最新版本
+应用模板中的最新版本。每个应用模板可包含应用的多个版本。
+创建时间
+应用模板的创建时间。
+更新时间
+应用版本的更新时间。
+创建者
+上传应用版本的用户。
+在应用模板详情页面右侧的应用版本页签，查看应用模板中包含的应用版本。
+点击查看各个应用版本。
+选择应用版本后，点击编辑设置编辑当前版本的容器组设置，点击删除删除当前应用版本。
+在应用模板详情页面右侧点击应用实例页签，查看使用应用模板在 KubeSphere 企业版平台安装的应用。
+参数 描述 名称
+应用的名称。
+状态
+应用当前的状态。
+创建中：系统正在创建应用。
+运行中：应用运行正常。
+升级中：系统正在升级应用版本。
+删除中：系统正在删除应用。
+失败：应用创建失败。
+版本
+应用的版本。
+项目
+应用所属的项目。
+节点组
+应用所属的节点组。
+边缘节点
+应用所属的边缘节点。
+说明 可在边缘项目的“应用负载 &amp;gt; 批量应用部署”下使用应用模板安装应用。</description>
+    </item>
+    
+    <item>
+      <title>编辑应用模板信息</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/04-edit-app-template-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/04-edit-app-template-information/</guid>
+      <description>本节介绍如何编辑应用模板信息。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有边缘应用模板管理权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+操作步骤 以具有边缘应用模板管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+在需要操作的应用模板右侧点击，然后在下拉列表中选择编辑信息。
+在编辑信息对话框设置应用模板的别名和描述，然后点击确定。
+参数 描述 别名
+应用的别名。别名只能包含中文、字母、数字和连字符（-），不得以连字符（-）开头或结尾，最长 63 个字符。
+描述
+应用的描述信息。描述可包含任意字符，最长 256 个字符。</description>
+    </item>
+    
+    <item>
+      <title>创建应用版本</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/06-upload-an-app-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/06-upload-an-app-version/</guid>
+      <description>本节介绍如何为应用模板创建新的应用版本。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有应用/应用版本/应用实例管理权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+操作步骤 以具有应用/应用版本/应用实例管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+在需要操作的应用模板右侧点击，然后在下拉列表中选择创建应用版本。
+在创建应用版本对话框，设置应用版本、容器组设置及网络设置，然后点击创建。
+应用版本创建完成后将显示在应用模板详情页面的应用版本页签。
+说明 有关设置参数的更多信息，请参阅参数描述。</description>
+    </item>
+    
+    <item>
+      <title> 编辑应用版本设置</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/07-edit-an-app-version-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/07-edit-an-app-version-settings/</guid>
+      <description>本节介绍如何编辑应用版本的设置。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有应用/应用版本/应用实例管理权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+操作步骤 以具有应用/应用版本/应用实例管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+在应用模板列表中点击一个应用模板的名称打开其详情页面。
+在应用模板详情页面右侧的应用版本页签，点击并选择需要编辑的应用版本，然后点击编辑设置。
+在编辑设置对话框，修改容器组设置和网络设置，然后点击确定。
+说明 有关设置参数的更多信息，请参阅参数描述。</description>
+    </item>
+    
+    <item>
+      <title>删除应用版本</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/08-delete-an-app-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/08-delete-an-app-version/</guid>
+      <description>本节介绍如何在应用模板中删除应用版本。
+警告 应用版本删除后无法恢复，请谨慎执行此操作。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有应用/应用版本/应用实例删除权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+操作步骤 以具有应用/应用版本/应用实例删除权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+在应用模板列表中点击一个应用模板的名称打开其详情页面。
+在应用模板详情页面右侧的应用版本页签，点击并选择需要删除的应用版本，然后点击删除。
+在删除应用版本对话框，输入应用版本的名称，然后点击确定。</description>
+    </item>
+    
+    <item>
+      <title>删除应用模板</title>
+      <link>/v3.1.0/08-workspace-management/05-app-templates/11-delete-an-app-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/08-workspace-management/05-app-templates/11-delete-an-app-template/</guid>
+      <description>本节介绍如何删除应用模板。
+警告 应用模板删除后无法恢复，请谨慎执行此操作。
+前提条件 您需要加入一个边缘企业空间并在企业空间中具有边缘应用模板管理权限。有关更多信息，请参阅“企业空间角色”和“企业空间成员”。
+删除单个应用模板 以具有边缘应用模板管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+在需要删除的应用模板右侧点击，然后在下拉列表中选择删除。
+在删除应用模板对话框，输入应用模板的名称，然后点击确定。
+批量删除应用模板 以具有边缘应用模板管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘企业空间。
+在左侧导航栏选择边缘应用模板。
+选择需要删除的应用模板左侧的复选框，然后在应用模板列表上方点击删除。
+在批量删除应用模板对话框，输入应用模板的名称，然后点击确定。
+说明 请使用半角逗号（,）和空格分隔多个名称。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>消息端点 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/</link>
+    <description>Recent content in 消息端点 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建消息端点</title>
+      <link>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/01-create-an-endpoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/01-create-an-endpoint/</guid>
+      <description>本节介绍如何在云端和边缘节点上创建消息端点，用于发送或接收云边消息。
+前提条件 您需要加入一个边缘项目并在项目中具有 project-admin 角色。
+操作步骤 以具有 project-admin 角色的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择云边消息 &amp;gt; 消息端点。
+在页面点击创建。
+在创建对话框，配置消息端点，然后点击创建。
+基本信息
+参数 描述 名称
+消息端点的名称。
+名称只能包含小写字母、数字和连字符（-），必须以小写字母或数字开头和结尾，最长 63 个字符。
+别名
+消息端点的别名。
+不同消息端点的别名可以相同。别名只能包含中文、字母、数字和连字符（-），不得以连字符（-）开头或结尾，最长 63 个字符。
+描述
+消息端点的描述信息。
+描述可包含任意字符，最长 256 个字符。
+消息端点类型
+参数 描述 SystemREST
+云端的 REST 接口。
+既可作为源端，发送请求到边缘节点；也可作为目的端，接收边缘节点发来的信息。
+需配置：Rest 类型、源端路径或目的端路径。
+Event Bus
+边缘节点上的接口端点。
+既可作为源端，发送数据到云端；也可以作为目的端，接收云端发来的信息。
+需配置：Topic 名称。
+Service Bus
+边缘节点上的 REST 接口端点。
+仅作为目的端点。数据可从云端路由传输至注册在 Service Bus 的边缘应用。
+需配置：目的端路径。
+消息端点配置
+参数 描述 Rest 类型
+把此消息端点作为源端或目的端。
+源端路径</description>
+    </item>
+    
+    <item>
+      <title>查看消息端点列表</title>
+      <link>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/02-view-an-endpoint-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/02-view-an-endpoint-list/</guid>
+      <description>本节介绍如何查看消息端点的列表信息。
+前提条件 您需要加入一个边缘项目并在项目中具有 project-admin 角色。
+操作步骤 以具有 project-admin 角色的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择云边消息 &amp;gt; 消息端点。
+消息端点列表提供以下信息：
+参数 描述 名称
+消息端点的名称。
+类型
+消息端点的类型：SystemREST、Event Bus 或 Service Bus。
+位置
+消息端点的位置：云端或边缘节点。
+消息端点配置
+消息端点的配置信息：源端路径、目的端路径或 Topic 名称。
+创建时间
+消息端点的创建时间。
+在列表上方点击搜索框并设置搜索条件，可按名称和类型搜索消息端点。
+在列表右上角点击可刷新列表信息。
+在列表右上角点击可定制列表中显示的信息。</description>
+    </item>
+    
+    <item>
+      <title>编辑消息端点信息</title>
+      <link>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/04-edit-endpoint-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/04-edit-endpoint-information/</guid>
+      <description>本节介绍如何编辑消息端点的信息。
+您可以编辑消息端点的别名和描述。不支持编辑消息端点的名称。
+前提条件 您需要加入一个边缘项目并在项目中具有 project-admin 角色。
+操作步骤 以具有 project-admin 角色的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择云边消息 &amp;gt; 消息端点。
+在需要编辑的消息端点右侧点击，然后在下拉列表中选择编辑信息。
+在编辑信息对话框，设置消息端点的基本信息，然后点击确定。
+参数 描述 别名
+消息端点的别名。
+不同消息端点的别名可以相同。别名只能包含中文、字母、数字和连字符（-），不得以连字符（-）开头或结尾，最长 63 个字符。
+描述
+消息端点的描述信息。
+描述可包含任意字符，最长 256 个字符。</description>
+    </item>
+    
+    <item>
+      <title>编辑消息端点配置</title>
+      <link>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/05-edit-endpoint-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/05-edit-endpoint-configuration/</guid>
+      <description>本节介绍如何编辑消息端点的配置。
+前提条件 您需要加入一个边缘项目并在项目中具有 project-admin 角色。
+操作步骤 以具有 project-admin 角色的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择云边消息 &amp;gt; 消息端点。
+在需要编辑的消息端点右侧点击，然后在下拉列表中选择编辑端点配置。
+在编辑端点配置对话框，编辑已有的端点配置，然后点击确定。
+参数 描述 源端路径
+消息发送方的路径，如 /msg/rest/servicebus。
+目的端路径
+消息接收方的路径，如 http://&amp;lt;IP&amp;gt;:&amp;lt;Port&amp;gt;/path。
+Topic 名称
+发布/订阅模式中的消息主题，定义了消息的分类和路由规则，如 /msg/receive/eventbus。</description>
+    </item>
+    
+    <item>
+      <title>删除消息端点</title>
+      <link>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/07-delete-endpoints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/09-project-management/08-cloud-edge-messaging/01-message-endpoint/07-delete-endpoints/</guid>
+      <description>本节介绍如何删除消息端点。
+警告 消息端点删除后不能恢复，请谨慎执行此操作。
+前提条件 您需要加入一个边缘项目并在项目中具有 project-admin 角色。
+删除单个消息端点 以具有 project-admin 角色的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择云边消息 &amp;gt; 消息端点。
+在需要删除的消息端点右侧点击，然后在下拉列表中选择删除。
+在删除消息端点对话框，输入消息端点的名称，然后点击确定。
+批量删除消息端点 以具有 project-admin 角色的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘项目。
+在左侧导航栏选择云边消息 &amp;gt; 消息端点。
+勾选需要删除的消息端点左侧的复选框，然后在消息端点列表上方点击删除。
+在批量删除消息端点对话框，输入消息端点的名称，然后点击确定。
+说明 请使用半角逗号（,）和空格分隔多个名称。</description>
+    </item>
+    
+  </channel>
+</rss>

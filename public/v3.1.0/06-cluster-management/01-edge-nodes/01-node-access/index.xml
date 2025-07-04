@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>节点接入 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/</link>
+    <description>Recent content in 节点接入 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>注册边缘节点</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/01-register-a-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/01-register-a-node/</guid>
+      <description>本节介绍如何注册一个或多个边缘节点，以备接入边缘集群。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+操作步骤 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+点击注册。
+在注册边缘节点对话框，点击单个注册或批量注册页签，设置注册信息，然后点击确定。
+单个注册
+参数 描述 节点名称
+边缘节点的名称。
+节点 IP 地址
+边缘节点的 SSH 登录信息，包括 IP 地址和端口号。
+用户名
+边缘节点的用户名。
+密码
+边缘节点的登录密码。
+文件服务器注册地址
+用于边缘节点与文件服务器的通信。
+可输入公开地址 docker.io 或 swr.cn-east-3.myhuaweicloud.com，或您的私有文件服务器地址（还需要填写文件服务器用户名和密码）。
+批量注册
+参数 描述 节点 IP 地址
+填写多个边缘节点的 SSH 登录 IP 地址，用英文逗号分开。
+SSH 端口
+各个边缘节点的端口必须一样。
+用户名
+各个边缘节点的用户名必须一样。
+密码
+各个边缘节点的登录密码必须一样。
+文件服务器注册地址
+用于边缘节点与文件服务器的通信。
+可输入公开地址 docker.io 或 swr.cn-east-3.myhuaweicloud.com，或您的私有文件服务器地址（还需要填写文件服务器用户名和密码）。
+如果注册成功，节点状态会变为未纳管，您还需要将其纳管到边缘集群。如果注册失败，请重新注册或删除该节点。</description>
+    </item>
+    
+    <item>
+      <title>纳管边缘节点</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/02-integrate-a-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/02-integrate-a-node/</guid>
+      <description>本节介绍如何将已注册的边缘节点纳管到边缘集群。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+纳管单个边缘节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+在需要纳管的节点右侧点击，然后在下拉列表中选择纳管。
+选择容器引擎、边缘软件及其版本，用于配置边缘节点环境，然后点击确定。
+纳管成功后，节点状态会变为运行中。在节点管理页面，也能查看到被纳管的边缘节点。
+批量纳管边缘节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+点击批量管理，在上方勾选选择全部，然后点击纳管。对话框会自动列出未纳管状态的节点。
+选择需要操作的节点，点击纳管。
+选择容器引擎、边缘软件及其版本，用于配置边缘节点环境，然后点击确定。
+纳管成功后，节点状态会变为运行中。在节点管理页面，也能查看到被纳管的边缘节点。</description>
+    </item>
+    
+    <item>
+      <title>查看节点列表</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/03-view-node-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/03-view-node-list/</guid>
+      <description>本节介绍“节点接入”页面的边缘节点列表。
+前提条件 您需要加入一个边缘集群并在集群中具有节点查看权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+操作步骤 以具有节点查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+节点列表提供以下信息：
+参数 描述 名称
+节点的主机名称和在子网内部的 IP 地址。
+状态
+边缘节点的运行状态。
+注册中：正在边缘节点上部署和启动一个 edgewize-ota-agent 服务。
+注册失败：边缘节点上的 edgewize-ota-agent 服务启动失败。
+未纳管：边缘节点注册成功，但节点未加入 Kubernetes 边缘集群。
+运行中：边缘节点已被 Kubernetes 边缘集群纳管，且运行正常。
+告警：边缘节点已被 Kubernetes 边缘集群纳管，但运行异常。您可以在节点详情页面的任务执行信息页签查看节点的告警信息。
+无法调度：节点被用户手动设置为不可调度。如果节点处在此状态，容器组将不能被调度到该节点。
+离线：在未纳管或运行状态下，长时间未收到边缘节点发送的消息。
+删除中：正在删除边缘节点。
+在列表上方点击搜索框并设置搜索条件，可按名称或状态搜索节点。
+在列表右上角点击可刷新列表信息。
+勾选右侧的未纳管，可一键筛选未纳管状态的边缘节点。</description>
+    </item>
+    
+    <item>
+      <title>查看节点详情</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/04-view-node-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/04-view-node-details/</guid>
+      <description>本节介绍接入的边缘节点的详情页面。
+前提条件 您需要加入一个边缘集群并在集群中具有节点查看权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+操作步骤 以具有节点查看权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+在节点列表中点击一个节点的名称打开其详情页面。
+在节点详情页面左侧的属性区域查看节点的资源属性。
+参数 描述 状态
+边缘节点的运行状态。
+注册中：正在边缘节点上部署和启动一个 edgewize-ota-agent 服务。
+注册失败：边缘节点上的 edgewize-ota-agent 服务启动失败。
+未纳管：边缘节点注册成功，但节点未加入 Kubernetes 边缘集群。
+运行中：边缘节点已被 Kubernetes 边缘集群纳管，且运行正常。
+告警：边缘节点已被 Kubernetes 边缘集群纳管，但运行异常。您可以在节点详情页面的任务执行信息页签查看节点的告警信息。
+无法调度：节点被用户手动设置为不可调度。如果节点处在此状态，容器组将不能被调度到该节点。
+离线：在未纳管或运行状态下，长时间未收到边缘节点发送的消息。
+删除中：正在删除边缘节点。
+IP 地址
+节点的 IP 地址。
+创建时间
+节点加入当前集群的时间。
+系统架构
+节点的 CPU 架构。
+操作系统版本
+节点的操作系统发行版和版本。
+操作系统类型
+节点的操作系统类型。
+规格
+节点的硬件资源配置。
+边缘节点时间
+节点当前的系统时间，可能与实际时间存在差异。
+内核版本
+节点的内核版本。
+Docker 版本
+节点上安装的 Docker 版本。
+Containerd 版本
+节点上安装的 Containerd 版本。
+EdgeCore 版本</description>
+    </item>
+    
+    <item>
+      <title>编辑节点信息</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/05-edit-node-info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/05-edit-node-info/</guid>
+      <description>本节介绍如何编辑边缘节点的信息。
+边缘节点被添加后，仅支持编辑节点的别名和描述。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+操作步骤 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+在需要操作的节点右侧点击，然后在下拉列表中选择编辑信息。
+在编辑信息对话框，设置节点的别名和描述，然后点击确定。
+参数 描述 别名
+别名只能包含中文、字母、数字和连字符（-），不得以连字符（-）开头或结尾，最长 63 个字符。
+描述
+节点的描述信息。描述可包含任意字符，最长 256 个字符。</description>
+    </item>
+    
+    <item>
+      <title>编辑软件信息</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/07-edit-software-info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/07-edit-software-info/</guid>
+      <description>本节介绍如何对边缘节点中的内置软件进行安装、卸载、重启、启用禁用、修改配置等操作。
+警告 请谨慎操作，以避免业务中断或边缘节点无法正常运行。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+编辑单个节点的软件信息 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+在需要操作的节点右侧点击，然后在下拉列表中选择编辑软件信息。
+在编辑软件信息对话框，点击容器引擎和边缘软件页签，对容器引擎、边缘软件进行以下操作。点击确认。
+若软件尚未安装，点击安装，安装容器引擎和边缘软件。
+点击，可卸载容器引擎和边缘软件。
+点击，可重启容器引擎和边缘软件。
+点击滑块，可禁用或启用容器引擎和边缘软件。
+点击，可展开并编辑配置文件。
+点击自定义命令页签，输入将在边缘节点上执行的 shell 命令。点击确认，最后点击确定。
+批量编辑节点的软件信息 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+点击批量管理，在上方勾选选择全部，然后点击编辑软件信息。
+在编辑软件信息对话框，点击容器引擎和边缘软件页签，选择容器引擎和边缘软件，及其版本。点击确认。
+确认后，您可以进行以下操作：
+若软件尚未安装，点击安装，安装容器引擎和边缘软件。
+点击，可卸载容器引擎和边缘软件。
+点击，可重启容器引擎和边缘软件。
+点击滑块，可禁用或启用容器引擎和边缘软件。
+点击，可展开并编辑配置文件。
+点击自定义命令页签，输入将在边缘节点上执行的 shell 命令。点击确认，最后点击确定。</description>
+    </item>
+    
+    <item>
+      <title>取消纳管节点</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/09-cancel-manage-a-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/09-cancel-manage-a-node/</guid>
+      <description>本节介绍如何从边缘集群中移除已纳管的边缘节点。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+取消纳管单个节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+在需要纳管的节点右侧点击，然后在下拉列表中选择取消纳管。
+在取消纳管对话框，输入边缘节点的名称，然后点击确定。
+取消纳管多个节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+点击批量管理，在上方勾选选择全部，然后点击取消纳管。对话框会自动列出已纳管的节点。
+选择需要操作的节点，点击取消纳管。
+在批量取消纳管对话框，输入边缘节点的名称，然后点击确定。
+说明 请使用半角逗号（,）和空格分隔多个名称。</description>
+    </item>
+    
+    <item>
+      <title> 删除边缘节点</title>
+      <link>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/11-delete-a-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/01-edge-nodes/01-node-access/11-delete-a-node/</guid>
+      <description>本节介绍如何移除未纳管的边缘节点。
+说明 如果边缘节点已经被纳管，取消纳管后才能删除节点。
+前提条件 您需要加入一个边缘集群并在集群中具有节点管理权限。有关更多信息，请参阅“边缘集群角色”和“边缘集群成员”。
+删除单个边缘节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+在需要纳管的节点右侧点击，然后在下拉列表中选择删除。
+在删除节点对话框，输入边缘节点的名称，然后点击确定。
+批量删除边缘节点 以具有节点管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入您的边缘集群。
+在左侧导航栏选择边缘节点 &amp;gt; 节点接入。
+点击批量管理，在上方勾选选择全部，然后点击删除。对话框会自动列出可被删除的节点。
+选择需要操作的节点，点击删除。
+在批量删除节点对话框，输入边缘节点的名称，然后点击确定。
+说明 请使用半角逗号（,）和空格分隔多个名称。</description>
+    </item>
+    
+  </channel>
+</rss>

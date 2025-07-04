@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>节点组角色 on EdgeWize 边缘计算平台</title>
+    <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/02-nodegroup-roles/</link>
+    <description>Recent content in 节点组角色 on EdgeWize 边缘计算平台</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>©2022 QingCloud, Inc. All rights reserved</copyright><atom:link href="/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/02-nodegroup-roles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>查看节点组角色列表</title>
+      <link>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/02-nodegroup-roles/02-view-a-nodegroup-role-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/v3.1.0/06-cluster-management/03-node-groups/04-manage-node-groups/07-nodegroup-settings/02-nodegroup-roles/02-view-a-nodegroup-role-list/</guid>
+      <description>本节介绍如何查看节点组角色列表。
+前提条件 您需要在节点组中具有节点组管理权限。有关更多信息，请参阅“节点组角色”和“节点组成员”。
+操作步骤 以具有节点组管理权限的用户登录 KubeSphere 企业版 Web 控制台并进入节点组管理页面。
+在左侧导航栏选择节点组设置 &amp;gt; 节点组角色。
+节点组提供以下预置角色：
+角色 描述 &amp;lt;nodegroup&amp;gt;-admin
+节点组管理员，可管理节点组中的所有资源。
+&amp;lt;nodegroup&amp;gt;-viewer
+节点组观察员，只能查看节点组中的资源。</description>
+    </item>
+    
+  </channel>
+</rss>
